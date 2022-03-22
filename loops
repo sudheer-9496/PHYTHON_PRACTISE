@@ -1,0 +1,264 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPnnQ2oGmoJaTomX92J9EUc",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sudheer-9496/PHYTHON_PRACTISE/blob/main/loops\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1KCSk727D_XH",
+        "outputId": "01024bab-caf2-47a1-e820-c89cf41fb93c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "543\n",
+            "eligible\n"
+          ]
+        }
+      ],
+      "source": [
+        "## find the person elegible for voting\n",
+        "a=int(input())\n",
+        "if a>=18 :\n",
+        "  print(\"eligible\")\n",
+        "else :\n",
+        "  print(\"not eligible\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## max of 3 numbers\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "c=int(input())\n",
+        "if a>b and a>c :\n",
+        "   max=a\n",
+        "elif b>a and b>c :\n",
+        "    max=b\n",
+        "else :\n",
+        "  max=c\n",
+        "  print(max)   \n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sJofhGeoGNiQ",
+        "outputId": "801bac4a-b21b-4804-8eae-684e8f44af25"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "5\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## give 5 subjects marks\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "c=int(input())\n",
+        "d=int(input())\n",
+        "e=int(input())\n",
+        "if a>b>c>d>e :\n",
+        " max=a\n",
+        "elif b>a>c>d>e :\n",
+        " max=b\n",
+        "elif c>a>b>d>e :\n",
+        " max=c\n",
+        "elif d>a>c>b>e :\n",
+        " max=b\n",
+        "elif e>a>c>d>b :\n",
+        " max=e\n",
+        "print(max)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cmF8WD90Hvs8",
+        "outputId": "221c7731-0a5b-4bbd-d8ee-db74b34a766a"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "9\n",
+            "5\n",
+            "6\n",
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "io0cX0EeOAkZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "## check whether a triangle is equilateral or isoceles or scalen\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "c=int(input())\n",
+        "if a==b and a==c :\n",
+        "   print(\"Equilateral\")\n",
+        "elif b==a or b==c :\n",
+        "     print(\"Isoceles\")\n",
+        "else :\n",
+        " print(\"scalen\") "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0gzS8Uf6L95q",
+        "outputId": "5a19d8fc-e2c6-4b03-c5d2-250c797ea303"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "3\n",
+            "Isoceles\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## whether a leap year or not\n",
+        "y=int(input())\n",
+        "if y%4==0 and y%100!=0 and y%400!=0 :\n",
+        "  print(\"it is a leap year\")\n",
+        "elif(y%4==0 and y%100==0 and y%400==0) :\n",
+        "  print(\"it is a leap year\")\n",
+        "else :\n",
+        "  print(\"it is not a leap year\") \n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RCYCKrioOB9y",
+        "outputId": "d8c76137-e44c-48eb-b44e-e219ef4a4207"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1900\n",
+            "it is not a leap year\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## C program to check whether a number is divisible by 5 and 11 or not\n",
+        "a=int(input())\n",
+        "if a%5==0 and a%11==0 :\n",
+        "  print(\"no is divisible by 5 and 11\")\n",
+        "elif a%5==0 and a%11!=0 :\n",
+        "  print(\"no is divisible by 5\")\n",
+        "elif a%5!=0 and a%11==0 :\n",
+        "  print(\"no is divisible by 11\") \n",
+        "else :\n",
+        "  print(\"not divisible by 5 and 11\")   \n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s3AzhpLJSKYh",
+        "outputId": "ed10ee36-2fea-44c9-b861-51d6ff70916c"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "not divisible by 5 and 11\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "JjaoXUkKTBM5"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
